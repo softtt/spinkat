@@ -1,0 +1,95 @@
+/**
+* 2007-2015 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2015 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.reviews {
+  margin: 0 0 20px 0; }
+  .reviews div.review {
+    margin: 0 0 14px;
+    padding-top: 14px;
+    border-top: 1px solid #d6d4d4; }
+    .reviews div.review:first-child {
+      padding: 0;
+      border: none; }
+    .reviews div.review .review_author {
+      padding: 0 20px;
+      line-height: 18px; }
+      .reviews div.review .review_author span {
+        font-weight: bold;
+        float: left; }
+      .reviews div.review .review_author .star_content {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0; }
+    .reviews div.review .review_details {
+      overflow: hidden;
+      border-left: 1px solid #d6d4d4; }
+      @media (max-width: 991px) {
+        .reviews div.review .review_details {
+          border-left: none; }
+          .reviews div.review .review_details ul {
+            list-style-type: none;
+            margin: 0; }
+            .reviews div.review .review_details ul li {
+              padding: 2px 0 2px; }
+              .reviews div.review .review_details ul li:before {
+                font-family: "FontAwesome";
+                content: "\f0da";
+                color: #333;
+                margin-right: 8px; } }
+  .reviews div.star:after {
+    content: "\f006";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #777676; }
+  .reviews div.star_on:after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #ef8743; }
+  .reviews .review_author_infos {
+    clear: both;
+    padding-top: 9px; }
+    .reviews .review_author_infos strong {
+      display: block;
+      color: #333; }
+    .reviews .review_author_infos em {
+      color: #adadad; }
+  .reviews a {
+    text-decoration: none;
+    font-weight: bold; }
+  .reviews span.report_btn {
+    cursor: pointer; }
+  .reviews span.report_btn:hover {
+    text-decoration: underline; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*# sourceMappingURL=users_reviews.css.map */

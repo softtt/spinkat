@@ -1,0 +1,2 @@
+ALTER TABLE `ps_tag`
+CHANGE COLUMN `id_lang` `id_lang` INT(10) UNSIGNED NOT NULL DEFAULT 1 ;

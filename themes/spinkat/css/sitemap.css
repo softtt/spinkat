@@ -1,0 +1,78 @@
+/******************************************************************
+          Sitemap Page Styles
+*******************************************************************/
+#sitemap .sitemap_block .page-subheading {
+  margin-top: 0;
+  margin-bottom: 16px; }
+#sitemap .sitemap_block li {
+  line-height: 16px;
+  padding-bottom: 11px; }
+  #sitemap .sitemap_block li a:before {
+    content: "\f105";
+    display: inline-block;
+    font-family: "FontAwesome";
+    padding-right: 10px; }
+  #sitemap .sitemap_block li a:hover {
+    font-weight: bold; }
+#sitemap .sitemap_block.tag-cloud .tag-element {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 3px;
+  height: 22px;
+  background: #e8e8e1; }
+  #sitemap .sitemap_block.tag-cloud .tag-element:before {
+    display: inline-block;
+    content: "";
+    height: 22px;
+    width: 18px;
+    background: url(../img/sprites.png) #fff no-repeat;
+    background-position: -547px -150px;
+    float: left; }
+  #sitemap .sitemap_block.tag-cloud .tag-element:hover {
+    color: #241c1c;
+    cursor: pointer; }
+  #sitemap .sitemap_block.tag-cloud .tag-element .tag-name {
+    height: 22px;
+    padding: 2px 7px 2px 0px; }
+  #sitemap .sitemap_block.tag-cloud .tag-element:nth-child(2n-1) {
+    background: #e8e8e1; }
+    #sitemap .sitemap_block.tag-cloud .tag-element:nth-child(2n-1):before {
+      background-position: -547px -150px; }
+  #sitemap .sitemap_block.tag-cloud .tag-element:nth-child(2n) {
+    background: #e4eaf0; }
+    #sitemap .sitemap_block.tag-cloud .tag-element:nth-child(2n):before {
+      background-position: -584px -150px; }
+
+#listpage_content .categTree .page-subheading {
+  margin-top: 0; }
+
+#listpage_content div.tree_top {
+  padding: 5px 0 0 27px; }
+  #listpage_content div.tree_top a:before {
+    content: "\f015";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    color: #241c1c; }
+  #listpage_content div.tree_top a:hover:before {
+    color: #e31e24; }
+
+ul#sitemap_tree {
+  padding-left: 24px; }
+  ul#sitemap_tree li {
+    margin: 0 0 0 21px;
+    padding: 5px 0 0 33px;
+    border-left: 1px solid #cacbcd;
+    background: url(../img/sitemap-horizontal.png) no-repeat left 15px transparent; }
+    ul#sitemap_tree li a:hover {
+      font-weight: bold; }
+  ul#sitemap_tree > li {
+    margin: 0 0 0 11px; }
+  ul#sitemap_tree li.last {
+    border: medium none;
+    background: url(../img/sitemap-last.png) no-repeat 0px -4px transparent; }
+
+/*# sourceMappingURL=sitemap.css.map */

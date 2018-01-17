@@ -1,0 +1,114 @@
+@import "compass";
+@import "theme_variables";
+#categories_block_top {
+  clear: both;
+  position: relative;
+  top: 30px;
+  .sf-menu {
+    position: relative;
+    > li {
+      position: static;
+      > ul {
+        width: 100%;
+        top: 60px;
+        margin: 0 20px;
+        > li {
+          display: block;
+          float: left;
+          width: 20%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 0 10px;
+        }
+        > .category_thumb {
+          display: block;
+          clear: both;
+          overflow: hidden;
+          width: 100%;
+          img {
+            display: inline-block;
+            width: 33%;
+          }
+        }
+      }
+      h4 {
+        a {
+          font-size: 1.1em;
+          &:before {
+            display: none;
+          }
+        }
+      }
+      .main-level-submenus {
+        position: relative;
+        display: block !important;
+        visibility: visible !important;
+        top: 0;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        left: 0;
+      }
+    }
+    .category_thumb {
+      display: none;
+    }
+  }
+}
+
+#categories_block_left {
+  // .block_content > ul {
+  //   // border-top: 1px solid $base-border-color;
+  //   ul {
+  //     padding-top: 6px;
+  //   }
+  // }
+  // li {
+  //   position: relative;
+  //   list-style-type: disc;
+  //   color: $base-red-color;
+  //   margin-left: 18px;
+  //   padding: 6px 0px;
+  //   &:last-child {
+  //     padding-bottom: 0px;
+  //   }
+  //   a {
+  //     font-weight: 600;
+  //     color: $base-text-color;
+  //     display: block;
+  //     font-size: 15px;
+  //     line-height: 18px;
+  //     padding: 0 30px 0 0px;
+  //     &.selected,
+  //     &:hover {
+  //       color: $base-red-color;
+  //     }
+  //   }
+  //   span.grower {
+  //     display: block;
+  //     position: absolute;
+  //     right: 0;
+  //     top: 0;
+  //     cursor: pointer;
+  //     font-family: $font-icon;
+  //     font-size: 15px;
+  //     &.OPEN,
+  //     &.CLOSE {
+  //       &:before {
+  //         content: "\f068";
+  //         display: block;
+  //         color: $base-text-color;
+  //         width: 16px;
+  //         height: 31px;
+  //         line-height: 31px;
+  //         text-align: center;
+  //       }
+  //     }
+  //     &.CLOSE:before {
+  //       content: "\f067";
+  //       color: silver;
+  //     }
+  //   }
+  // }
+}

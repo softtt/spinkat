@@ -1,0 +1,215 @@
+/*** ESSENTIAL STYLES ***/
+.sf-contener {
+  clear: both;
+  float: left;
+  width: 100%; }
+
+.sf-menu,
+.sf-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+@media (min-width: 1024px) {
+  .sf-menu {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: table; } }
+@media (max-width: 1023px) {
+  .sf-menu {
+    display: none; } }
+
+.sf-menu ul {
+  position: absolute;
+  top: -999em;
+  background: #fff; }
+  @media (max-width: 1023px) {
+    .sf-menu ul {
+      position: relative; } }
+
+.sf-menu ul li {
+  width: 100%; }
+
+.sf-menu li:hover {
+  visibility: inherit;
+  /* fixes IE7 'sticky bug' */ }
+
+.sf-menu > li {
+  display: table-cell;
+  float: none;
+  text-align: center;
+  vertical-align: middle; }
+  @media (max-width: 1023px) {
+    .sf-menu > li {
+      float: none;
+      position: relative;
+      display: block; }
+      .sf-menu > li:last-child {
+        padding-bottom: 5px; } }
+  .sf-menu > li > a {
+    font: 700 14px/14px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 18px 15px; }
+    @media (max-width: 1023px) {
+      .sf-menu > li > a {
+        padding: 10px 0px; } }
+  .sf-menu > li.sfHover > a,
+  .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
+    color: #898c91; }
+
+.sf-menu li li li a {
+  display: inline-block;
+  position: relative;
+  color: #777777;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+  .sf-menu li li li a:before {
+    content: "\f105";
+    display: inline-block;
+    font-family: "FontAwesome";
+    padding-right: 10px; }
+  .sf-menu li li li a:hover {
+    color: #241c1c; }
+
+.sf-menu li ul {
+  display: none;
+  left: 0;
+  top: 59px;
+  /* match top ul list item height */
+  z-index: 99;
+  padding: 12px 0px 18px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px; }
+  @media (max-width: 1023px) {
+    .sf-menu li ul {
+      top: 0; } }
+
+.sf-menu li li ul {
+  position: static;
+  display: block !important;
+  opacity: 1 !important;
+  background: none;
+  -moz-box-shadow: transparent 0px 0px 0px;
+  -webkit-box-shadow: transparent 0px 0px 0px;
+  box-shadow: transparent 0px 0px 0px; }
+
+.sf-menu li li li ul {
+  padding: 0 0 0 20px; }
+
+.sf-menu li li li ul {
+  width: 220px; }
+
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+  top: -999em; }
+
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+  left: 200px;
+  /* match ul width */
+  top: 0; }
+
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+  top: -999em; }
+
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+  left: 200px;
+  /* match ul width */
+  top: 0; }
+
+.sf-menu > li > ul {
+  padding: 26px 30px 31px;
+  width: 100%; }
+  .sf-menu > li > ul > li > a {
+    text-transform: uppercase;
+    font: 600 16px/20px "Open Sans", sans-serif;
+    color: #241c1c; }
+    .sf-menu > li > ul > li > a:hover {
+      color: #e31e24; }
+
+.sf-menu > li > ul > li {
+  float: left;
+  width: 20%;
+  padding-right: 15px; }
+  @media (max-width: 1023px) {
+    .sf-menu > li > ul > li {
+      width: 50%; } }
+  @media (max-width: 319px) {
+    .sf-menu > li > ul > li {
+      width: 100%;
+      padding-bottom: 20px; } }
+  @media (min-width: 1024px) {
+    .sf-menu > li > ul > li.first-in-line-lg {
+      clear: left; } }
+  @media (min-width: 320px) and (max-width: 1023px) {
+    .sf-menu > li > ul > li.first-in-line-xs {
+      clear: left; } }
+
+.sf-menu > li > ul > li.category-thumbnail {
+  width: 100% !important;
+  float: none;
+  clear: both;
+  overflow: hidden;
+  padding-right: 0; }
+  .sf-menu > li > ul > li.category-thumbnail > div {
+    float: left;
+    padding-left: 10px;
+    width: 33.333%; }
+    @media (max-width: 319px) {
+      .sf-menu > li > ul > li.category-thumbnail > div {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+        text-align: center; } }
+    .sf-menu > li > ul > li.category-thumbnail > div:first-child {
+      padding-left: 0; }
+    .sf-menu > li > ul > li.category-thumbnail > div img {
+      max-width: 100%;
+      display: block; }
+
+.cat-title {
+  display: none; }
+  @media (max-width: 1023px) {
+    .cat-title {
+      display: block;
+      font: 700 14px/14px "Open Sans", sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+      display: block;
+      padding: 15px 15px;
+      position: relative;
+      text-align: center;
+      border-bottom: 1px solid #4c4d50; }
+      .cat-title:after {
+        display: block;
+        font-family: "FontAwesome";
+        content: "\f067";
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        font-size: 18px;
+        font-weight: 400; }
+      .cat-title.active:after {
+        content: "\f068"; } }
+
+.block_top_menu .category-thumbnail {
+  clear: both;
+  width: 100%;
+  float: none; }
+  .block_top_menu .category-thumbnail div {
+    float: left;
+    width: 33.33333%; }
+    .block_top_menu .category-thumbnail div img {
+      max-width: 100%; }
+.block_top_menu li.category-thumbnail {
+  padding-right: 0; }
+
+/*# sourceMappingURL=superfish-modified.css.map */

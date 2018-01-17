@@ -1,0 +1,147 @@
+/********************************************************
+            One-Page Checkout Styles
+********************************************************/
+#order-opc {
+  line-height: 20px; }
+  #order-opc .box {
+    padding-bottom: 20px; }
+  #order-opc .cart_navigation {
+    margin-bottom: 53px; }
+  #order-opc .page-heading.step-num {
+    position: relative;
+    padding-left: 45px;
+    overflow: visible; }
+    #order-opc .page-heading.step-num span {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 51px;
+      font-style: italic;
+      color: #241c1c;
+      position: absolute;
+      left: 10px;
+      top: -14px; }
+  #order-opc .form-group {
+    margin-bottom: 2px; }
+    #order-opc .form-group .form-control {
+      max-width: 271px; }
+  #order-opc .lost_password {
+    display: inline-block;
+    text-decoration: underline;
+    margin: 5px 0 14px; }
+    #order-opc .lost_password:hover {
+      text-decoration: none; }
+  #order-opc .title_block {
+    font-weight: bold;
+    color: #241c1c;
+    padding: 3px 0 6px; }
+  #order-opc .opc-button {
+    padding: 11px 0 0 0; }
+  #order-opc ul.bullet {
+    line-height: 22px;
+    margin-bottom: 5px; }
+  #order-opc .date-select {
+    padding-bottom: 10px; }
+  #order-opc .opc-add-save {
+    border-top: 1px solid #cacbcd;
+    margin-top: 20px;
+    padding-top: 20px; }
+  #order-opc #message {
+    margin-bottom: 35px; }
+  #order-opc #opc_payment_methods {
+    margin-bottom: 30px; }
+    #order-opc #opc_payment_methods p.warning {
+      color: #F13340;
+      font-weight: 700; }
+  #order-opc #opc_account {
+    margin-bottom: 30px; }
+  #order-opc .address_delivery.select {
+    margin-bottom: 15px; }
+  #order-opc #address_invoice_form.form-group {
+    margin-bottom: 30px; }
+  #order-opc .order_form_container {
+    margin-bottom: 20px;
+    display: flex;
+    overflow: auto;
+    width: 100%; }
+    #order-opc .order_form_container .order_form_block {
+      background: #f6f7f7;
+      padding: 30px;
+      width: 676px;
+      border-right: 1px solid #ebebeb;
+      float: left; }
+      #order-opc .order_form_container .order_form_block h2 {
+        margin-top: 0px;
+        font-weight: 600; }
+      #order-opc .order_form_container .order_form_block form {
+        margin-top: 25px; }
+        #order-opc .order_form_container .order_form_block form .form-group {
+          margin-bottom: 15px;
+          overflow: initial; }
+          #order-opc .order_form_container .order_form_block form .form-group label {
+            width: 110px;
+            font-weight: 400;
+            line-height: 15px;
+            float: left;
+            margin-right: 10px;
+            padding-top: 3px; }
+          #order-opc .order_form_container .order_form_block form .form-group input, #order-opc .order_form_container .order_form_block form .form-group textarea {
+            max-width: 495px;
+            display: inline-block;
+            padding: 5px;
+            line-height: 19px; }
+          #order-opc .order_form_container .order_form_block form .form-group input {
+            font-weight: 600; }
+          #order-opc .order_form_container .order_form_block form .form-group.form-error label {
+            color: #e31e24; }
+          #order-opc .order_form_container .order_form_block form .form-group.form-group-payment #HOOK_PAYMENT {
+            float: right;
+            width: 495px; }
+            #order-opc .order_form_container .order_form_block form .form-group.form-group-payment #HOOK_PAYMENT .payment-input-block {
+              padding-top: 3px; }
+            #order-opc .order_form_container .order_form_block form .form-group.form-group-payment #HOOK_PAYMENT .radio {
+              float: left; }
+            #order-opc .order_form_container .order_form_block form .form-group.form-group-payment #HOOK_PAYMENT .payment-label {
+              width: auto;
+              padding: 0px; }
+    #order-opc .order_form_container .additional_info_block {
+      float: left;
+      width: 277px;
+      padding: 30px; }
+      #order-opc .order_form_container .additional_info_block p {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #ebebeb; }
+        #order-opc .order_form_container .additional_info_block p:last-child {
+          padding: 0px;
+          margin: 0px;
+          border: none; }
+    #order-opc .order_form_container sup {
+      top: -0.2em;
+      color: #e31e24; }
+
+#new_account_form .id_state,
+#new_account_form .dni,
+#new_account_form .postcode {
+  display: none; }
+
+@media (max-width: 1023px) {
+  #order-opc .order_form_container {
+    display: block; }
+    #order-opc .order_form_container .order_form_block {
+      width: 100%;
+      padding: 10px;
+      display: block; }
+      #order-opc .order_form_container .order_form_block form .form-group input, #order-opc .order_form_container .order_form_block form .form-group textarea {
+        max-width: 100%; }
+      #order-opc .order_form_container .order_form_block form .form-group.form-group-payment #HOOK_PAYMENT {
+        width: 100%; }
+      #order-opc .order_form_container .order_form_block form .form-group.order_checkout_button label {
+        display: none; }
+    #order-opc .order_form_container .additional_info_block {
+      width: 100%;
+      padding: 10px; }
+      #order-opc .order_form_container .additional_info_block p {
+        padding-bottom: 10px;
+        margin-bottom: 10px; } }
+
+/*# sourceMappingURL=order-opc.css.map */

@@ -1,0 +1,217 @@
+/*
+Uniform Theme: Uniform Default
+Version: 1.8
+By: Josh Pyles
+License: MIT License
+---
+For use with the Uniform plugin:
+http://uniformjs.com/
+
+*/
+
+
+@import '_uniform._base';
+
+/* INPUT & TEXTAREA */
+
+/* ************************************************************************************************
+        uniform
+************************************************************************************************ */
+
+
+#{$class-wrapper-element}#{$class-wrapper} input#{$class-input},
+#{$class-wrapper-element}#{$class-wrapper} select#{$class-multiselect},
+#{$class-wrapper-element}#{$class-wrapper} textarea#{$class-textarea} {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height:18px;
+    color: #777;
+    border: solid 1px #d6d4d4;
+
+
+    @include whenHover {
+        @include box-shadow(0px 0px 4px rgba(0,0,0,0.2));
+        border-color: #cbcaca;
+    }
+}
+
+/* PRESENTATION */
+
+/* Buttons */
+
+div#{$class-wrapper}#{$class-button} {
+    span {
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    @include whenHover {
+        span {
+            color: #555;
+        }
+    }
+
+    @include whenDisabled {
+        span {
+            color: #bbb;
+        }
+    }
+}
+
+
+/* Select */
+
+#compare_shipping .form-group label{display:block}
+div#{$class-wrapper}#{$class-select} {
+    font-size: 12px;
+    border: 1px solid #c5c5c5;
+    background: #fff;
+
+    span {
+        background: none;
+    }
+
+    select {
+        background: none;
+        font-size: 13px;
+    }
+
+    @include whenDisabled {
+        span {
+            color: #bbb;
+        }
+    }
+
+    &:after {
+        content: '';
+        width: 27px;
+        height: 25px;
+        background: url(../../img/sprites.png) no-repeat;
+        background-position: -537px -208px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left: 1px solid #c5c5c5;
+        pointer-events: none;
+    }
+}
+
+div.checker span {
+    top: 0px;
+    background: url(../../img/sprites.png);
+    background-position: -293px -150px !important;
+    cursor: pointer;
+}
+
+div.checker span:hover {
+    background-position: -326px -150px;
+    cursor: pointer;
+}
+
+div.checker span.checked {
+    background-position: -358px -150px !important;
+}
+
+.checker span input{margin:0 !important}
+.checker span input:hover{cursor: pointer;}
+
+
+.radio input[type="radio"], .radio-inline input[type="radio"],
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+        margin: 0 !important
+    }
+
+.radio-inline, .checkbox-inline{cursor:default}
+
+/* Checker */
+div#{$class-wrapper}#{$class-checkbox} {
+    cursor:pointer;
+    margin-right: 5px;
+        span{position:relative;top:-2px;}
+}
+
+#layered_form div#{$class-checkbox}{
+    display:inline
+
+}
+
+/* Radio */
+div#{$class-wrapper}#{$class-radio} {
+    margin-right: 3px;
+    span{position:relative;top:-2px;}
+}
+
+div#{$class-wrapper}#{$class-radio} {
+    display: inline-block;
+    min-height: 15px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 5px;
+    span {
+        top: 0px;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        background: url(../../img/sprites.png);
+        background-position: -394px -150px;
+        &:hover {
+            background-position: -435px -150px;
+        }
+        &.checked {
+            background-position: -503px -150px;
+        }
+        input {
+            cursor: pointer;
+            min-height: 15px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &.hover, &.active, &.focus, &.active.hover {
+        span {
+            &.checked {
+                background-position: -503px -150px;
+            }
+        }
+    }
+}
+
+/* Uploader */
+div#{$class-wrapper}#{$class-upload} {
+    span#{$class-action} {
+        text-shadow: rgba(0,0,0,0.1) 0px 1px 0px;
+        font-size: 13px;
+        font-weight: bold;
+        color:#fff;
+    }
+
+    span#{$class-filename} {
+        color: #777;
+        border: solid 1px #d6d4d4;
+        font-size: 13px;
+        background:#fbfbfb;
+        margin-right:2px;
+    }
+
+    @include whenDisabled {
+        span#{$class-action} {
+            color: #aaa;
+        }
+
+        span#{$class-filename} {
+            border-color: #ddd;
+            color: #aaa;
+        }
+    }
+}
+
+#{$class-wrapper-element}#{$class-wrapper} input#{$class-input} {
+    &, &:focus {
+        background-color: #fff;
+    }
+}

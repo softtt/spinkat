@@ -1,0 +1,67 @@
+@import "theme_variables";
+
+#brands-series-block {
+    margin-bottom: 20px;
+    .brand_wrapper {
+        display: table;
+        margin-bottom: 20px;
+        position: relative;
+        @media (max-width: $screen-xs-max) { // max 767px
+            width: 50%;
+        }
+        .brand {
+            height: 90px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            img {
+                max-width: 138px;
+                max-height: 88px;
+            }
+        }
+        .brand-series {
+            display: block;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            padding: 0px 10px;
+            display: none;
+            ul {
+                border-top: 0px;
+                li {
+                    padding: 10px;
+                    border-bottom: 1px solid #e4e4e4;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+        &.opened {
+            .brand-series {
+                display: block;
+                width: 100%;
+                z-index: 100;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 26px;
+                width: 26px;
+                background: url(../../../../../img/sprites.png) no-repeat #ec454c;
+                background-position: -354px -209px;
+                right: 11px;
+                bottom: 1px;
+            }
+        }
+    }
+    .line {
+        border-bottom: 1px solid #cacbcf;
+        margin: 0px 10px 0px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+    }
+}

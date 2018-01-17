@@ -1,0 +1,56 @@
+.additional-top-links {
+  float: left;
+  display: block;
+  width: 200px; }
+  .additional-top-links .additional-top-links-selector {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0px 14px;
+    border: 1px solid #cacbcd;
+    border-radius: 3px;
+    height: 42px;
+    background: #fff; }
+    .additional-top-links .additional-top-links-selector span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding: 10px 0px;
+      line-height: 20px; }
+      .additional-top-links .additional-top-links-selector span:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 18px;
+        background: url(../../../../../img/sprites.png) no-repeat;
+        background-position: -545px -211px;
+        float: right; }
+    .additional-top-links .additional-top-links-selector select {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      border: none;
+      background: none;
+      position: absolute;
+      height: auto;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+      .additional-top-links .additional-top-links-selector select option:first-child {
+        display: none; }
+  @media (max-width: 1023px) {
+    .additional-top-links {
+      width: 100%;
+      margin-bottom: 10px; }
+      .additional-top-links .additional-top-links-selector {
+        height: 36px; }
+        .additional-top-links .additional-top-links-selector span {
+          color: #333;
+          padding: 7px 0px; } }
+
+/*# sourceMappingURL=front.css.map */

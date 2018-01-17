@@ -1,0 +1,17 @@
+[{shop_url}]
+
+Сообщение от покупателя магазина
+{shop_name}
+
+E-MAIL КЛИЕНТА: {email}
+
+ИМЯ: {name}
+
+ТЕМА: {subject}
+
+СООБЩЕНИЕ ПОКУПАТЕЛЯ: {message}
+
+НОМЕР ЗАКАЗА: {order_name}
+
+{shop_name} [{shop_url}]
+

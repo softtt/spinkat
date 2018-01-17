@@ -1,0 +1,67 @@
+#callback-link-block {
+  float: right;
+  padding-top: 13px;
+  padding-right: 13px; }
+  #callback-link-block a {
+    display: block;
+    padding: 0px;
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif; }
+    #callback-link-block a.shop-email {
+      color: #797778;
+      text-align: right; }
+    #callback-link-block a:focus {
+      text-decoration: none; }
+  #callback-link-block .phone {
+    display: inline-block;
+    margin-bottom: 3px; }
+    #callback-link-block .phone span.phone-icon {
+      display: block;
+      position: relative;
+      height: 23px;
+      width: 23px;
+      background: url(../../../img/sprites.png) -116px -31px no-repeat;
+      float: left;
+      margin-right: 3px; }
+    #callback-link-block .phone a.order-link {
+      border-bottom: 2px solid #a0a0a0;
+      line-height: 16px;
+      float: left;
+      padding-top: 1px; }
+  @media (max-width: 1023px) {
+    #callback-link-block {
+      float: left;
+      padding-top: 1px; }
+      #callback-link-block .phone {
+        margin-bottom: 0px; }
+        #callback-link-block .phone span.phone-icon {
+          display: none; } }
+
+#callback_form .header_callback_form {
+  text-align: center;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 12px; }
+  #callback_form .header_callback_form h2 {
+    font-size: 24px;
+    margin-top: 0px; }
+#callback_form .callback_content label {
+  font-weight: normal; }
+#callback_form .callback_content sup {
+  color: #DF5656; }
+#callback_form .callback_content input, #callback_form .callback_content textarea {
+  width: 100%;
+  margin-bottom: 12px; }
+#callback_form .callback_content textarea {
+  height: 60px; }
+#callback_form .callback_content .error_callback, #callback_form .callback_content .success_callback {
+  text-align: center; }
+#callback_form .callback_content .error_callback {
+  color: #DF5656; }
+#callback_form .callback_content .success_callback {
+  color: #677945; }
+#callback_form .callback_content .button {
+  width: 100%; }
+
+/*# sourceMappingURL=callback.css.map */

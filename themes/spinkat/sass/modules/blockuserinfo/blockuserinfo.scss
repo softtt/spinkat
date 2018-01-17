@@ -1,0 +1,20 @@
+@import "compass";
+@import "theme_variables";
+.header_user_info {
+    float: right;
+    padding: 0px 0px 0px 8px;
+    a {
+        line-height: 17px;
+        font-family: $font-family-arial;
+        display: block;
+        margin: 3px 0px;
+        cursor: pointer;
+        float: left;
+    }
+    &:last-child {
+        a {
+            padding-right: 8px;
+            border-right: 1px solid #c4c7cc;
+        }
+    }
+}

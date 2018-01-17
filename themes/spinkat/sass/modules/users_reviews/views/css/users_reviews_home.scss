@@ -1,0 +1,39 @@
+@import "theme_variables";
+
+#reviews-home {
+    .reviews {
+        display: flex;
+        width: 100%;
+        .review {
+            background: #f7f5f6;
+            border: 1px solid #e7e7e7;
+            width: 50%;
+            float: left;
+            padding: 18px;
+            .review-title {
+                margin: 0px 0px 16px;
+                display: inline-block;
+                width: 100%;
+                h2 {
+                    font: 600 16px/18px $font-family;
+                    margin: 0px;
+                    float: left;
+                }
+                .review-rating {
+                    float: right;
+                    .star {
+                        font-size: 20px;
+                        width: 21px;
+                        &.star_on {
+                            &:after {
+                                color: #ffa800;
+                                content: "\f006";
+                            }
+                        }
+                    }
+                }
+            }
+            .review-text {}
+        }
+    }
+}

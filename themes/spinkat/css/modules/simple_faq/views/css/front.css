@@ -1,0 +1,17 @@
+.questions {
+  padding: 20px;
+  margin-bottom: 20px; }
+  .questions .question {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ebebeb; }
+    .questions .question:last-child {
+      border: none;
+      padding: 0; }
+    .questions .question .question_author_infos {
+      font-size: 14px;
+      padding-bottom: 5px; }
+    .questions .question label {
+      font-size: 16px; }
+
+/*# sourceMappingURL=front.css.map */

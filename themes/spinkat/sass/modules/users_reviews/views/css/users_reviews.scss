@@ -1,0 +1,103 @@
+@import "compass";
+@import "theme_variables";
+
+.reviews {
+    margin: 0 0 20px 0;
+    padding: 20px;
+    div.review {
+        margin: 0 0 14px;
+        padding-top: 14px;
+        border-top: 1px solid $base-border-color;
+        &:first-child {
+            padding: 0;
+            border: none;
+        }
+        &:last-child {
+            margin: 0px;
+        }
+        .review_author {
+            padding: 0 20px;
+            line-height: 18px;
+            span {
+                font-weight: bold;
+                float: left;
+            }
+            .star_content {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+            }
+        }
+        .review_details {
+            overflow: hidden;
+            border-left: $main_border;
+            @media (max-width: $screen-sm-max) { //max 767px
+                border-left: none;
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    li {
+                        padding: 2px 0 2px;
+                        &:before{
+                            font-family: $font-icon;
+                            content: "\f0da";
+                            color: $base-text-color;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: $screen-xs-max) {
+            .review_author,
+            .review_details {
+                width: 100% !important;
+                padding: 0;
+                border: none;
+            }
+
+        }
+
+    }
+    div.star {
+        &:after {
+            content: "\f006";
+            font-family: $font-icon;
+            display: inline-block;
+            color: #777676;
+        }
+    }
+    div.star_on {
+        &:after {
+            content: "\f005";
+            font-family: $font-icon;
+            display: inline-block;
+            color: #ef8743;
+        }
+    }
+    .review_author_infos {
+        clear: both;
+        padding-top: 9px;
+        strong{
+            display: block;
+            color: $base-text-color;
+        }
+        em {
+            color: #adadad;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.add-review {
+    padding: 20px;
+}

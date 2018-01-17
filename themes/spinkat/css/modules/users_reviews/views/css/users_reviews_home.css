@@ -1,0 +1,27 @@
+#reviews-home .reviews {
+  display: flex;
+  width: 100%; }
+  #reviews-home .reviews .review {
+    background: #f7f5f6;
+    border: 1px solid #e7e7e7;
+    width: 50%;
+    float: left;
+    padding: 18px; }
+    #reviews-home .reviews .review .review-title {
+      margin: 0px 0px 16px;
+      display: inline-block;
+      width: 100%; }
+      #reviews-home .reviews .review .review-title h2 {
+        font: 600 16px/18px "Open Sans", sans-serif;
+        margin: 0px;
+        float: left; }
+      #reviews-home .reviews .review .review-title .review-rating {
+        float: right; }
+        #reviews-home .reviews .review .review-title .review-rating .star {
+          font-size: 20px;
+          width: 21px; }
+          #reviews-home .reviews .review .review-title .review-rating .star.star_on:after {
+            color: #ffa800;
+            content: "\f006"; }
+
+/*# sourceMappingURL=users_reviews_home.css.map */

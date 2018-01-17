@@ -1,0 +1,53 @@
+#brands-series-block {
+  margin-bottom: 20px; }
+  #brands-series-block .brand_wrapper {
+    display: table;
+    margin-bottom: 20px;
+    position: relative; }
+    @media (max-width: 1023px) {
+      #brands-series-block .brand_wrapper {
+        width: 50%; } }
+    #brands-series-block .brand_wrapper .brand {
+      height: 90px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      #brands-series-block .brand_wrapper .brand img {
+        max-width: 138px;
+        max-height: 88px; }
+    #brands-series-block .brand_wrapper .brand-series {
+      display: block;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      padding: 0px 10px;
+      display: none; }
+      #brands-series-block .brand_wrapper .brand-series ul {
+        border-top: 0px; }
+        #brands-series-block .brand_wrapper .brand-series ul li {
+          padding: 10px;
+          border-bottom: 1px solid #e4e4e4; }
+          #brands-series-block .brand_wrapper .brand-series ul li:last-child {
+            border: none; }
+    #brands-series-block .brand_wrapper.opened .brand-series {
+      display: block;
+      width: 100%;
+      z-index: 100; }
+    #brands-series-block .brand_wrapper.opened:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      background: url(../../../../../img/sprites.png) no-repeat #ec454c;
+      background-position: -354px -209px;
+      right: 11px;
+      bottom: 1px; }
+  #brands-series-block .line {
+    border-bottom: 1px solid #cacbcf;
+    margin: 0px 10px 0px; }
+  @media (max-width: 1023px) {
+    #brands-series-block {
+      margin-bottom: 10px; } }
+
+/*# sourceMappingURL=brands_on_category_page.css.map */

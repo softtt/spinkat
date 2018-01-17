@@ -1,0 +1,69 @@
+Установка
+
+1. Склонировать репозиторий
+git clone git@bitbucket.org:aprex/spinkat.ru.git
+
+2. Создать БД, сделать свежий дамп базы с дева и импортировать в локальную БД
+
+3. В директории config скопировать settings.sample.php в settings.inc.php
+и настроить подключение к БД
+
+4. В директории config скопировать defines.sample.php в defines.inc.php
+
+5. В директории config создать директорию xml
+
+6. Скопировать изображения:
+    - директорию /img
+    - директорию modules/ph_simpleblog/covers
+    - директорию modules/ph_simpleblog/covers_authors
+    - директорию modules/ph_simpleblog/covers_cat
+    - директорию userfiles
+    - директорию blog_pics
+    - слайды из модуля homeslider
+    - мзображения из модуля themeconfigurator
+
+7. Создать директорию log и дать права на запись
+
+8. В админке сгенерировать новый .htaccess
+Настройки > SEO и URL - добавить в .htaccess директивы
+    # Dispatcher
+    RewriteCond %{REQUEST_FILENAME} -s [OR]
+    RewriteCond %{REQUEST_FILENAME} -l [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^.*$ - [NC,L]
+
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    RewriteRule ^.*$ %{ENV:REWRITEBASE}index.php [NC,L]
+
+    # Protect php files in directory root from direct access
+    RedirectMatch 404 ^/header.php$
+    RedirectMatch 404 ^/footer.php$
+    RedirectMatch 404 ^/images.inc.php$
+    RedirectMatch 404 ^/init.php$
+    </IfModule>
+
+9. Проверить ошибки конфигурации в админке Prestashop
+Расширенные параметры > Информация о конфигурации
+
+10. * Скомпилировать файлы .css тем бек и фронт офисов
+- Выполнить compass compile в директории с темой
+
+11. Установить зависимости composer
+
+12. Загрузить актуальные файлы с предыдущего хостинга:
+    robots.txt
+    sitemap
+    файлы верификации Яндекс, Гугл и т.д.
+
+12. Очистить кеш в админке
+
+13. Проверить работу системы:
+    - Вход в админку
+    - Работа с товарами
+    - Работа с заказами
+    - Работа с блогами
+    - Просмотр категорий, производителей, серий, товаров
+    - Просмотр блогов
+    - Просмотр тегов
+    - Добавление в корзину и оформление заказа

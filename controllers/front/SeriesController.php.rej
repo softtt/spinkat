@@ -1,0 +1,17 @@
+diff a/controllers/front/SeriesController.php b/controllers/front/SeriesController.php	(rejected hunks)
+@@ -136,8 +136,15 @@
+              // Product sort must be called before assignModelsList()
+              $this->productSort();
+  
+++<<<<<<< Updated upstream
+ +            $this->assignModelsList();
+ +            
+++=======
++             $tag = Tools::getValue('id_tag');
++ 
++             $this->assignModelsList($tag);
++ 
+++>>>>>>> Stashed changes
+              //allow tags only on spinning pages 13 - spinning id
+              if ($this->category->id == 13) {
+                  $this->context->smarty->assign(array(

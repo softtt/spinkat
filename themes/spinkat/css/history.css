@@ -1,0 +1,54 @@
+/************************************************************
+				History Page Styles
+************************************************************/
+#order-detail-content table .return_quantity_buttons {
+  margin-top: 3px; }
+  #order-detail-content table .return_quantity_buttons a {
+    display: none;
+    float: left; }
+    #order-detail-content table .return_quantity_buttons a + a {
+      margin-left: 3px; }
+#order-detail-content table .order_qte_input {
+  display: none;
+  width: 57px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0;
+  text-align: center; }
+#order-detail-content table label {
+  font-weight: 400; }
+
+.table td.history_detail a + a {
+  margin-left: 14px; }
+.table td.step-by-step-date {
+  width: 105px; }
+.table tfoot strong {
+  color: #241c1c; }
+
+.info-order i {
+  font-size: 20px; }
+  .info-order i.icon-gift {
+    color: #f13340; }
+  .info-order i.icon-repeat {
+    color: #55c65e; }
+
+#sendOrderMessage {
+  margin-bottom: 30px; }
+  #sendOrderMessage h3 {
+    margin-bottom: 0px; }
+  #sendOrderMessage .form-group {
+    margin-bottom: 5px;
+    display: block;
+    overflow: auto; }
+    #sendOrderMessage .form-group label {
+      float: left;
+      margin: 0px 10px 0px 0px;
+      line-height: 26px; }
+    #sendOrderMessage .form-group select.form-control {
+      width: 263px;
+      float: left; }
+
+.box p.alert {
+  margin-bottom: 18px; }
+
+/*# sourceMappingURL=history.css.map */

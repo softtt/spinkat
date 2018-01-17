@@ -1,0 +1,118 @@
+@import "compass";
+@import "theme_variables";
+
+/******************************************************************
+          Sitemap Page Styles
+*******************************************************************/
+#sitemap {
+  .sitemap_block {
+    .page-subheading {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    li {
+      line-height: 16px;
+      padding-bottom: 11px;
+      a {
+        &:before {
+          content: "\f105";
+          display: inline-block;
+          font-family: $font-icon;
+          padding-right: 10px;
+        }
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+    &.tag-cloud {
+      .tag-element {
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 8px;
+        margin-right: 3px;
+        height: 22px;
+        background: #e8e8e1;
+
+        &:before {
+          display: inline-block;
+          content: "";
+          height: 22px;
+          width: 18px;
+          background: url(../img/sprites.png) #fff no-repeat;
+          background-position: -547px -150px;
+          float: left;
+        }
+
+        &:hover {
+          color: #241c1c;
+          cursor: pointer;
+        }
+
+        .tag-name {
+          // display: inline-block;
+          height: 22px;
+          padding: 2px 7px 2px 0px;
+        }
+
+        &:nth-child(2n-1) {
+          background: #e8e8e1;
+
+          &:before {
+            background-position: -547px -150px;
+          }
+        }
+
+        &:nth-child(2n) {
+          background: #e4eaf0;
+
+          &:before {
+            background-position: -584px -150px;
+          }
+        }
+      }
+    }
+  }
+}
+#listpage_content .categTree .page-subheading{
+  margin-top: 0;
+}
+#listpage_content div.tree_top {
+  padding: 5px 0 0 27px;
+  a {
+    &:before {
+      content: "\f015";
+      display: inline-block;
+      font-family: $font-icon;
+      font-size: 20px;
+      color: $base-text-color;
+    }
+    &:hover {
+      &:before {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+ul#sitemap_tree {
+  padding-left: 24px;
+  li {
+    margin: 0 0 0 21px;
+    padding: 5px 0 0 33px;
+    border-left: 1px solid $base-border-color;
+    background: url(../img/sitemap-horizontal.png) no-repeat left 15px transparent;
+    a:hover {
+      font-weight: bold;
+    }
+  }
+  > li {
+    margin: 0 0 0 11px;
+  }
+  li.last {
+    border: medium none;
+    background: url(../img/sitemap-last.png) no-repeat 0px -4px transparent;
+  }
+}

@@ -1,0 +1,35 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{cashpayment}spinkat>cashpayment_6e873ab50865ced53faa01af4f0d4c87'] = 'Оплата наличными';
+$_MODULE['<{cashpayment}spinkat>cashpayment_cbe0a99684b145e77f3e14174ac212e3'] = 'Вы точно хотите удалить эти данные?';
+$_MODULE['<{cashpayment}spinkat>cashpayment_a02758d758e8bec77a33d7f392eb3f8a'] = 'Не задана валюта для этого модуля.';
+$_MODULE['<{cashpayment}spinkat>cashpayment_bfa43217dfe8261ee7cb040339085677'] = 'Необходимо задать реквизиты.';
+$_MODULE['<{cashpayment}spinkat>cashpayment_c888438d14855d7d96a2724ee9c306bd'] = 'Настройки обновлены';
+$_MODULE['<{cashpayment}spinkat>cashpayment_e2ac9a070d4c1aef1884ae3e524fc2ae'] = 'Оплата наличными';
+$_MODULE['<{cashpayment}spinkat>cashpayment_5dd532f0a63d89c5af0243b74732f63c'] = 'Контактная информация';
+$_MODULE['<{cashpayment}spinkat>cashpayment_3ec365dd533ddb7ef3d1c111186ce872'] = 'Подробности';
+$_MODULE['<{cashpayment}spinkat>cashpayment_c9cc8cce247e49bae79f15173ce97354'] = 'Сохранить';
+$_MODULE['<{cashpayment}spinkat>validation_e2b7dec8fa4b498156dfee6e4c84b156'] = 'Метод оплаты не доступен.';
+$_MODULE['<{cashpayment}spinkat>payment_execution_644818852b4dd8cf9da73543e30f045a'] = 'Вернуться к оформлению заказа';
+$_MODULE['<{cashpayment}spinkat>payment_execution_6ff063fbc860a79759a7369ac32cee22'] = 'Оформление заказа';
+$_MODULE['<{cashpayment}spinkat>payment_execution_f1d3b424cd68795ecaa552883759aceb'] = 'Информация о заказе';
+$_MODULE['<{cashpayment}spinkat>payment_execution_879f6b8877752685a966564d072f498f'] = 'Корзина пуста.';
+$_MODULE['<{cashpayment}spinkat>payment_execution_c884ed19483d45970c5bf23a681e2dd2'] = 'Краткая информация по вашему заказу:';
+$_MODULE['<{cashpayment}spinkat>payment_execution_e2867a925cba382f1436d1834bb52a1c'] = 'Общая сумма вашего заказа';
+$_MODULE['<{cashpayment}spinkat>payment_execution_1f87346a16cf80c372065de3c54c86d9'] = '(вкл. НДС)';
+$_MODULE['<{cashpayment}spinkat>payment_execution_3dd021316505c0204989f984246c6ff1'] = 'Информация о банковском счете будет показана на следующей странице.';
+$_MODULE['<{cashpayment}spinkat>payment_execution_edd87c9059d88fea45c0bd6384ce92b9'] = 'Пожалуйста подтвердите свой заказ, нажав \"Я подтверждаю ​​заказ\".';
+$_MODULE['<{cashpayment}spinkat>payment_execution_46b9e3665f187c739c55983f757ccda0'] = 'Я подтверждаю заказ';
+$_MODULE['<{cashpayment}spinkat>payment_execution_569fd05bdafa1712c4f6be5b153b8418'] = 'Другие способы оплаты';
+$_MODULE['<{cashpayment}spinkat>payment_6e873ab50865ced53faa01af4f0d4c87'] = 'Оплата наличными';
+$_MODULE['<{cashpayment}spinkat>payment_return_88526efe38fd18179a127024aba8c1d7'] = 'Ваш заказ на %s оформлен.';
+$_MODULE['<{cashpayment}spinkat>payment_return_2e9ede76c5ca11ef2e313dec22eecec1'] = 'Сумма заказа:';
+$_MODULE['<{cashpayment}spinkat>payment_return_cf4347969d900664825ce11a3a2faca2'] = 'Код заказа: %d';
+$_MODULE['<{cashpayment}spinkat>payment_return_3a28d6d222c411a27e5f9e6e9f132027'] = 'Код заказа: %s';
+$_MODULE['<{cashpayment}spinkat>payment_return_19c419a8a4f1cd621853376a930a2e24'] = 'Email с информацией о заказе отправлен на вашу почту.';
+$_MODULE['<{cashpayment}spinkat>payment_return_ca7e41a658753c87973936d7ce2429a8'] = 'По вопросам и за дополнительной информацией, пожалуйста, обращайтесь в';
+$_MODULE['<{cashpayment}spinkat>payment_return_66fcf4c223bbf4c7c886d4784e1f62e4'] = 'службу поддержки клиентов';
+$_MODULE['<{cashpayment}spinkat>payment_return_d15feee53d81ea16269e54d4784fa123'] = 'Мы обнаружили проблемы с вашим заказом. Если вы считаете, что это ошибка, свяжитесь с нашей';
+$_MODULE['<{cashpayment}spinkat>payment_069b30db06d047a398f9eb0940d3279c'] = 'Оплата наличными';

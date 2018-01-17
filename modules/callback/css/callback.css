@@ -1,0 +1,43 @@
+#callback-link {
+  float: left;
+  height: 36px; }
+  #callback-link a {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 8px 9px 11px 8px;
+    cursor: pointer;
+    line-height: 18px; }
+    #callback-link a:hover, #callback-link a.active {
+      background: #2b2b2b; }
+    #callback-link a:focus {
+      text-decoration: none; }
+    #callback-link a i {
+      margin-right: 8px; }
+
+#callback_form .header_callback_form {
+  text-align: center;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 12px; }
+  #callback_form .header_callback_form h2 {
+    font-size: 24px;
+    margin-top: 0px; }
+#callback_form .callback_content label {
+  font-weight: normal; }
+#callback_form .callback_content sum {
+  color: #DF5656; }
+#callback_form .callback_content input, #callback_form .callback_content textarea {
+  width: 100%;
+  margin-bottom: 12px; }
+#callback_form .callback_content textarea {
+  height: 60px; }
+#callback_form .callback_content .error_callback, #callback_form .callback_content .success_callback {
+  text-align: center; }
+#callback_form .callback_content .error_callback {
+  color: #DF5656; }
+#callback_form .callback_content .success_callback {
+  color: #677945; }
+#callback_form .callback_content .button {
+  width: 100%; }
+
+/*# sourceMappingURL=callback.css.map */

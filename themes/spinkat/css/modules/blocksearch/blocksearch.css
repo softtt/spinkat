@@ -1,0 +1,90 @@
+#search_block_top,
+.search_block_top {
+  float: left;
+  width: 730px;
+  margin-left: 10px; }
+  #search_block_top .searchbox,
+  .search_block_top .searchbox {
+    float: left;
+    width: 100%; }
+  @media (max-width: 1023px) {
+    #search_block_top,
+    .search_block_top {
+      width: 100%;
+      margin: 0 0 15px 0; } }
+
+.ac_results {
+  background: #fff;
+  border: 1px solid #cacbcd;
+  width: 271px;
+  margin-top: -1px; }
+  .ac_results li {
+    padding: 0 10px;
+    font-weight: normal;
+    color: #686666;
+    font-size: 13px;
+    line-height: 22px; }
+    .ac_results li.ac_odd {
+      background: #fff; }
+    .ac_results li:hover, .ac_results li.ac_over {
+      background: #fff; }
+
+form.searchbox {
+  position: relative; }
+  form.searchbox label {
+    color: #241c1c; }
+  form.searchbox input#search_query_block {
+    margin-right: 10px;
+    max-width: 222px;
+    margin-bottom: 10px;
+    display: inline-block;
+    float: left; }
+  form.searchbox .button.button-small {
+    float: left; }
+    form.searchbox .button.button-small i {
+      margin-right: 0; }
+
+#search_block_top .search_query_top,
+#search_block_top #search_query_block,
+#search_block_left .search_query_top,
+#search_block_left #search_query_block,
+.search_block_top .search_query_top,
+.search_block_top #search_query_block {
+  display: inline;
+  padding: 10px 60px 10px 13px;
+  height: 42px;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif; }
+#search_block_top .btn.button-search,
+#search_block_left .btn.button-search,
+.search_block_top .btn.button-search {
+  background: #e62329;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  color: #fff;
+  width: 42px;
+  text-align: center;
+  padding: 13px 0px; }
+  #search_block_top .btn.button-search span,
+  #search_block_left .btn.button-search span,
+  .search_block_top .btn.button-search span {
+    display: none; }
+  #search_block_top .btn.button-search:before,
+  #search_block_left .btn.button-search:before,
+  .search_block_top .btn.button-search:before {
+    content: "";
+    display: block;
+    background: url(../../../img/sprites.png) -256px -96px no-repeat;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    margin: 0px 13px; }
+  #search_block_top .btn.button-search:hover,
+  #search_block_left .btn.button-search:hover,
+  .search_block_top .btn.button-search:hover {
+    color: #6f6f6f; }
+
+/*# sourceMappingURL=blocksearch.css.map */
